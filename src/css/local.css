@@ -1,0 +1,110 @@
+/* .reveal h1.title { */
+/*     text-shadow: 0 0 5px rgb(45, 255, 220); */
+/*     font-family: "kozuka-mincho-pro"; */
+/*     font-weight: 900; */
+/*     font-size: 14em; */
+/* } */
+
+.reveal h2 {
+    font-family: "Isotope A", "Isotope B";
+    font-weight: 400;
+}
+
+#table-of-contents li, #table-of-contents a {
+    font-family: "Isotope A", "Isotope B";
+    font-weight: 100;
+    font-size: 2em;
+    color: #ddd;
+}
+
+.reveal p {
+    text-transform: none;
+    font-family: "Isotope A", "Isotope B";
+    font-weight: 100;
+}
+
+/*
+Isotope A, Isotope B
+font-style: normal
+font-weight: 200; thin
+font-weight: 300; light
+font-weight: 400; book
+font-weight: 500; medium
+font-weight: 600; semibold
+font-weight: 700; bold
+*/
+
+
+.reveal div {
+    font-weight: 800;
+    text-transform: uppercase;
+            }
+/* .reveal div>span { display: block; */
+/*                    text-shadow: 0 0 4px rgb(45,255,220); } */
+.reveal pre { text-transform: none; font-weight: normal; }
+.reveal pre span { display: inline; }
+.reveal section { font-family: "Gotham A", "Gotham B";
+                  font-weight: 800; }
+.reveal section ul { margin: 0;
+                     text-transform: uppercase;
+                     font-weight: 800;
+                     /* text-shadow: 0 0 3px rgb(45,255,220); */
+                   }
+.reveal section ul li { list-style-type: none;
+                        line-height: 1; }
+
+.reveal pre { box-shadow: none; }
+
+.reveal table { text-transform: none;
+                font-weight: 400; }
+.reveal tbody tr:nth-child(1) { font-weight: 500; }
+
+#table-of-contents {
+    font-size: 18px;
+    font-weight: 100;
+    font-family: "Gotham Narrow A", "Gotham Narrow B";
+}
+
+.reveal #table-of-contents ul li { text-shadow: none; }
+
+#talk-title { display:none; }
+#slide-talk-title div,
+#slide-thank-you div {
+    font-size: 3em;
+    line-height: 0.9;
+}
+
+#slide-talk-title div>span,
+#slide-thank-you div>span { display: inline; }
+
+#slide-talk-title div.line-1 span,
+#slide-thank-you div.line-1 span {
+    font-weight: 200;
+    font-size: 0.5em;
+    text-transform: lowercase;
+}
+
+#slide-hobby li {
+    text-transform: lowercase;
+    line-height: 1.2;
+    font-size: 2em;
+    text-align: center;
+}
+
+svg text { font-family: "Gotham Narrow A", "Gotham Narrow B"; }
+
+#slide-background h2 {
+    color: white;
+    background: url("/images/IMG_2309.png") no-repeat;
+    font-family: "Gotham Narrow A", "Gotham Narrow B";
+    background-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*
+      // doesn't work without the -webkit- prefix in Safari (haven't tried other browsers)
+      background-clip: text;
+      text-fill-color: transparent;
+   */
+    font-weight: 900;
+    text-shadow: none;
+}

@@ -1,0 +1,72 @@
+#+STARTUP: showeverything
+* Reveal JS and Org-reveal presentation example
+
+
+Includes example of using background-clip for image through text.
+
+** Usage
+
+#+begin_src shell
+find src | entr make
+#+end_src
+
+#+begin_src shell
+make start-server
+#+end_src
+
+** Requirements
+- [[https://github.com/eradman/entr][entr]]
+Installation via [[https://brew.sh][Homebrew]].
+#+begin_src shell
+brew install entr
+#+end_src
+
+** Getting started
+Install ~reveal.js~ and its ~npm~ dependencies, and do inital build
+#+begin_src shell
+make
+#+end_src
+
+Default port is 8002. Set ~REVEAL_PORT~ to override.
+#+begin_src shell
+make start-server
+#+end_src
+
+In another shell, start watching the source
+#+begin_src shell
+make start-build
+#+end_src
+
+** Interesting files
+
+*** [[src/index.org]]
+This is the file where you write your presentation in org-mode. Use
+~org-reveal~ to generated the appropriate index.html file.
+*** [[src/css/theme/source/grzm.scss]]
+Theme for the entire presentation.
+*** [[src/css/local.css]]
+Presentation-specific custom css. Primarily for per-slide
+tweaks. Ideally global theme adjustments are included in [[src/css/theme/source/grzm.scss][grzm.scss]].
+
+** Builds
+The ~start-server~ target is simply
+
+#+begin_src shell
+find src/ | entr make
+#+end_src
+
+This watches for changes to files in ~src~ and runs ~make~ when any are
+found. If you have other media or items to include in the
+presentation, update the ~Makefile~ accordingly
+
+** Debugging
+*** Debugging the ~Makefile~
+makefiles
+#+begin_src
+make --just-print
+make -n # same as make --just-print
+make --warn-undefined-variables
+make --print-data-base
+make -p # same as --print-data-base
+make --debug
+#+end_src

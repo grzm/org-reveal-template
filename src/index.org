@@ -1,0 +1,18 @@
+#+STARTUP: showeverything
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_HLEVEL: 2
+#+REVEAL_THEME: grzm
+#+REVEAL_EXTRA_CSS: /css/local.css
+#+REVEAL_INIT_OPTIONS: transition: "convex", transitionSpeed: "fast"
+#+OPTIONS: toc:t num:nil :reveal_title_slide:nil ':t
+
+* Here's an example
+And some text
+#+begin_src shell
+cat "foo"
+#+end_src
+
+* background
+:PROPERTIES:
+:CUSTOM_ID: background
+:END:

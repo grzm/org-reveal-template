@@ -1,0 +1,93 @@
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+html * {
+	color-profile: sRGB;
+	rendering-intent: auto;
+}
+
+$mainFont: "Gotham A", "Gotham B", "Source Sans Pro", "Hiragino Sans", Heletica, sans-serif;
+$headingFont: "Gotham A", "Gotham B", "Source Sans Pro", "Hiragino Sans", Heletica, sans-serif;
+// weights
+// 100 Thin
+// 200 Extra Light
+// 300 Light
+// 400 Book
+// 500 Medium
+// 700 Bold
+// 800 Black
+// 900 Ultra
+
+// Hiragino Sans
+//  W0 - W9
+$headingFontWeight: 800;
+$bodyFontWeight: 800;
+
+// Solarized colors
+$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+
+// Override theme settings (see ../template/settings.scss)
+$textColor: rgba(56, 255, 220, 0.9);
+$backColor: #022;
+$headingFontSize: 3em;
+$fontSize: 4em;
+$heading1Size: $headingFontSize;
+$heading2Size: $headingFontSize;
+$heading3Size: $headingFontSize;
+$heading4Size: $headingFontSize;
+
+$mainColor: $textColor;
+$headingColor: $textColor;
+$headingTextShadow: none;
+$backgroundColor: $backColor;
+$linkColor: $blue;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: $magenta;
+
+body {
+    background: $backColor;
+    background-color: $backColor;
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    text-transform: uppercase;
+    text-shadow: 0 0 4px #2dffdc;
+    line-height: 1.2;
+ /*    letter-spacing: 0.2em; */
+}
+
+.reveal {
+    font-weight: 200;
+}
+
+.controls-arrow { color: #244; }
